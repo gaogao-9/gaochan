@@ -1,7 +1,3 @@
 node_modules/
 ssh_key/
 *.bat
-*.png
-*.gif
-*.jpg
-*.zip
