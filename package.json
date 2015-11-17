@@ -1,0 +1,11 @@
+{
+	"name": "gao",
+	"scripts": {
+		"start": "node --harmony index.js"
+	},
+	"version": "0.1.0-3",
+	"engines": {
+		"node": "4.x.x",
+		"npm" : "2.x.x"
+	}
+}

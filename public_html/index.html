@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="gao">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
+		<!--@NOROBOT@-->
+		<!--@STYLE@-->
+		<!--@SCRIPT@-->
+		<script>
+		<!--
+		jQuery(function($){
+			if(UA.gl.isChrome){
+				//なんかChromeで100%未満のフォントサイズを指定するとたまに適用されないバグがあるらしい。
+				//再レンダリングすれば治るらしいので、ハイパーバッドノウハウだけど、バグ修正まではこれで代用。
+				document.body.style.webkitTransform = "scale(1)";
+				setTimeout(function(){
+					document.body.style.webkitTransform = null;
+					MENU.fn.SetSideMenuHeight();
+				},0);
+			}
+		});
+		-->
+		</script>
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+		<title><!--@TITLE@--><!--@SUBTITLE@--></title>
+	</head>
+	<body class="borderBox">
+		<div id="top" class="flex">
+			<h1><a href="/"><!--@TITLE@--></a></h1>
+			<ul class="flex1">
+				<!--@NAVIGATION@-->
+			</ul>
+		</div>
+		<div id="contents" class="top">
+			<!--@CONTENTS@-->
+		</div>
+		<div id="side" style="display:none">
+			<h1><a href="/"><!--@TITLE@--></a></h1>
+			<nav class="navigation">
+				<h2 class="head">NAVIGATION</h2>
+				<div class="body">
+					<ul>
+						<!--@NAVIGATION@-->
+					</ul>
+				</div>
+			</nav>
+			<section class="history">
+				<h2 class="head">HISTORY</h2>
+				<div class="body">
+					<!--@HISTORY@-->
+				</div>
+			</section>
+			<section class="lastupdate">
+				<h2 class="head">LAST UPDATE</h2>
+				<div class="body">
+					<span><!--@LASTUPDATE@--></span>
+				</div>
+			</section>
+		</div>
+		<div id="toplink" class="legacy">
+			<a href="/#contents">トップに戻る</a>
+		</div>
+		<footer class="top">
+			presented by <a href="https://twitter.com/gaogao_9" target="_blank">@gaogao_9</a><br>
+			designed by <a href="http://mint.chobi.net/fynch/" target="_blank">fynch</a>
+		</footer>
+	</body>
+</html>
+
+<!--
+                                                                              ..,:::;;;;;;;;:.                                                                                             
+                                                                         .,:;;;;;:::::::::::;r;,                                                                                           
+                                                                       ,;;;:::,,,,,,,,,,,,,,:::rr,                                                                                         
+                                                                   .,:;::,,,,,,,,,,,,,,,,,,,,,,::r;                                             i@@X                                       
+                                                              .,.,;r;:,,,,,,,,,,,,,,,,,,,,,,,,,,,:r:                          #@@            rG: A@@@                                      
+                                             .,,:;rrrr;:.:sS29hXr;::,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:r,                         @@@        .s; @@@r S@@                                      
+                                   ... .:s5Xhhhh93X222XXXGG5ir::::,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,::s.                       .@@s        @@@@ &@@.                                         
+                          .,:;;;;;;;;;;;rrr;;;;;;;rrsssir;;ir,:;::::::,,,,,,,,,,,,,,,,,,,,,,,,,,,,,::s                       M@@B@@@@B.   :@@@ 2@.                                         
+                     .,::;;::,,,,,,,,,,,..........,,,,:;.  :::;;:::,:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:r:                 .i@@@@@@@@@@@@@h    @@@                                            
+                   ,:;::,,,,,,,,,,,,,,,,,.,,,,,,:::::::r... ;:::::::::,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;               :@@@@@@@#      s@@#   ;@@:                                           
+                 ,::,,,,,,,,,,,,,,,,,,,,,,,,,,::;;;;;::r;,..:,.........,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;:              G@@@: 2@@        i@@;                                                 
+               ,::,,,,,,,,,,,,,,,,,,,,,,,,,,:::::;:,,...iSrsSrr;;;;::::,:,,,:,,,,,,......,,,,,,,,,,,,r               G@X  ,@@s         @@A                                                 
+              ;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,::,....;iirrrrsssssssrsrrrr;;r;;;;;;;;:::::,,,,,,,,,,;,                    @@A          @@&                                                 
+             ;:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,::,..,:rSsrrrrrrrrrrrrrrsssssss5ssrrrrrrrrrrrrr;rrrr;;,                    @@@           @@G                                                 
+            ;:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,..,:riir;r;r;r;rsssrrrrrrrrrr;i2rrsssssssiiss2,                          #@@     ,      @@G                                                 
+            ::,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.,;;sis;rrrrrr;ri .rSirrrrr;rr;;s;ssrrrrrrrrrrr2.                         @@G    #@@i   i@@,                                                 
+             ;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.,:;risr;rrrrr;;rS     :sisrrr;r;r;  ;irrrrrrrrrrs3                        @@@      A@@@r @@@                                                  
+             r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:;;rir;rsi;;r;;;S        .;isrrr;rr   .irr;;rs;rrrSX                      @@@A        &@@@@@:             A@2                                  
+             ;;,,,,,,,,,,,,,,,,,,,,,,,,,,.:;;;rsr;rr;s;rr;;S.           :iirrrr     isrr;S;;rrrX;                     ,H9           @@@5              @@@@                                 
+              s,,,,,,,,,,,,,,,,,,,,,,,,.,;r;rirr;rr ,srr;;i:              ;isi: ,,. .2iss3sr;;rsA.                                                     ;@@X B@@@@      .                   
+              r:,,,,,,,,,,,,,,,,,,,,,,.;r;:rsrr;r;  ;rr;;rs                 rX,:,     ir;2rsSs;r2A                                               ,3GA92G@@@@@@@@@    ,@@A                  
+               r,,,,,,,,,,,,,,,,,,,,.,;r:;rrrr;r:   isr;;2                   :,       :sr,;;rs;rsHi                                              @@@@@@@H@@@.         @@@:                 
+               ;:,,,,,,,,,,,,,,,,,,.;r;;rsr;rrS;.,,.52is2:                             si .i;;r;r99r                                                     H@@           @@@                 
+                r,,,,,,,,,,,,,,,,.,r;:rsr;rii5:     :s;rs                              rs  irrr;rXiG:                                                r#@@@@@@@@@2      @@@,                
+                ,:,,,,,,,,,,,,,,,:r;;ssr;iirr:       i;i,                              ;.  rsrr;s5sSG,                                             3@@@#;r@@i;B@@9      ,.                 
+                 i,,,,,,,,,,,,,;r;;rsr;;5i;rr        ,ii                                   ;irr;25si2&,                                           .@@S    @@   @@@                         
+                sB:,:,,,,,,,:;rr;rsr;rr2i::r,  .      .s                                   :Sr;ri,S2S2&,                                           @@A   H@@  A@@@.                        
+                Mis:,::,,::;rrrrsr;rsr:     . .    ;Ss:s                                   .ir;Sr  :S3hA;                                          .@@@A@@@; .@@@@                         
+               sArri;,,;rrrrrssr;rsr,     ;:    r@@@@@@@G9i.                   :XBM9r.     ,5;r3:    .;2Hh;                                          X@@@#     ii                          
+              :9hrriSr52isssrrrrs;.     :i2   :@@@@MHB@@A.:5,                ;@@#GhA@@Ms   2S:iX.        ,;.                                                                               
+             .Gi.  .i;,,ssrrrss;.     :S5S;  2@@@X2222XB@@                  r#:       ,X@sr9srS5                                                                                           
+             G3          risr:     .;S5sri, H@9 rhXX3XXX#@i                 :           ..XSsiir                                                                                           
+           .hX:   ..      ,,      ;S5srr;i A@G   AhX99hX3@B                              iiS5r2,                         .@@@;                                                             
+SS        ,3:    .,   .,        :SSsrr;r;;s@AA  SH2:.;GXi@@                             .3r2sss                           r@@@X &#i                                                        
+5H@Ai    :r   :.,;  ,,;.       sXXrrrrrr;r@H @&XMA2,,s&S:@@                        .... ;Xrsr5                              2@@@@@@;                                                       
+55A@@@. ,,    .,.:,.   ,       ;r2Sssr;;r@@  X@riGHHB&5r As                      ....,,.;5rr5,                         ;B#@@@@@@@2                                                         
+2i59Gr...    ..  :.    ,           .:;iA@@@2  #&;;sSiriM@A               ,.     ...,,;:,.5ri:                          M@@@Ar  H@@.                                                        
+2552s      .... ,.    .,                   r,  9@&X2hAAS,                .,       .,,..  2ir                                    H@@,                                                       
+5525hA5        ,.     ,.     ,;;:,.             s3r:.                                   rSi                                    :@@@#                                                       
+5iX3XGMH;      ,.    ,,    :i2555XG35;;,,.  ...          ...                           iX2:                                    H@@#.                                        H@@            
+Si23339A#,          ..   ,i2irrrrs9iGiiSS2....     ...,,:,,,.           .,;;rir      ,.553                              .r.                                                 r@@@           
+irS52X33AAsis, ....,:,:;s5irrrrrrr2ri2rrr5,     . ::,;:;:,,..       .,;rrrrrrs2;   .: .Xhr                              @@@@9.                          i@@,                 5@@           
+5iiiii29h&M@@A      GX5Sirrir;;r;;2rrii;;ir    .,,,:;:.:...      .:;;;;::,,,,,:, :,   ,X;.                               r@@@@@G, .                    h@@@.                 .@@X@@@@@     
+X5Siiii5Xh3GH@,     ,3rrrr;rS;rr;;SsrrSs;r5.   .,,.....         ,r;:::::,,,,::riS&    :r                                    :M@@@@@@                  @@@r              .r&@@@@@@@@@@@     
+X23XSiiiS5Gr:A,      ;Srr;;;is;r;;i2rrrSr;is                   .r:::::,,:,;;,;9;;X    ,:                                        5BMi                ,@@@               #@@@@@@@@           
+2S299X5sSX.           ;Srr;;;Ss;r;r9sSrrSsr9S.                  :;::::;;:5S   i  r                                                                 i@@#                ;&;   @@X           
+2S22339h9              ;5rrrr;:ir;;rriSsi;r5X5,.,,,,....,,,,,,,..,;;:,.  S.                                                                       #@@@@G                    r@@:,H@@@@@@;  
+2i252A2r                ;2rrrr ;Sr;; ii:2; ir :.  .;.,,,,.,.....        ,                                                                        @@@@i@@@@s:.               @@@@@@@@&G@@@A 
+5i59A;                   ,5sri  :Sss. 3  2  5r ..  :                    :..                                                                    .@@@X   s@@@@@@@i            @@@A,      H@@,
+5i&5                       r5X    ri2  r  ,  is ,  ;.                   ,  ,.  .;i9AA9r:                                                       @@@;       ,r9#@:                        @@A
+XX:                         :9i     ,;         ;.  ;.                   ,  ;@@@@@@##M###M&r                                                    @@s                                      @@h
+i                             r      ,r,::;siiS#;  ;                   .,  H@BA&h933399GAH#h.                                                                                        .9@@@ 
+                              :SXA#@@@@@@@@@@@@@3  ........            : .BBX22255552222X9hHB;                                                                                   ;A@@@@@:  
+iXh9325ir:.  ..,,,,,:;rsi29A#@@@@#BA&hhGGGh9939&#;           .  ....  , r@A2SSS55555555522X9&#i                                                                                  @@@@&.    
+2GMMM###@@###@@@@@@@@@####MHAh933XX2222222222223A@MhSs;:,...         .; :AG2555555555555522X3h#3                                                                                           
+55XXXX339hG&&Ghh9hhh99933XX22255555555555555552X3hABM########MBBAh3hr     3h255552X22555552223hMA.                                                                                         
+5i222222222222222222222222255555555555555555555222X3399hhhGG&&&AAHHB#.     AX222259922252222223hB#,                                                                                        
+5iSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS5r :;, ;2SSSSSSX225SSSSSSSSSSS2,                                                                                       
+-->

@@ -1,0 +1,36 @@
+<article id="main" class="contents top">
+	<h2 class="head" title="トップページ">トップページ</h2>
+	<article>
+		<h3 class="head" title="トップ絵">トップ絵</h3>
+		<div class="center">
+		  <div id="topimage">
+				<a href="/img/topimage.png" target="_blank">
+					<img src="/img/topimage_t.png" alt="二階堂マリ">
+				</a>
+		  </div>
+		</div>
+		<aside class="center">
+			かわいい
+		</aside>
+		<script>
+		<!--
+			jQuery(function($){
+				var topimg = $("#topimage");
+				var imgs = topimg.find("a");
+				if(imgs.length<=1) return;
+				
+				imgs.on("mouseenter",function(eve){
+					imgs.each(function(i,e){
+						$(this).toggleClass("hidden",this===imgs[0]);
+					});
+				});
+				imgs.on("mouseleave",function(eve){
+					imgs.each(function(i,e){
+						$(this).toggleClass("hidden",this===imgs[1]);
+					});
+				});
+			});
+		-->
+		</script>
+	</article>
+</article>

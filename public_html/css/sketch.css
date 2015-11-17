@@ -1,0 +1,8 @@
+#sketch ul{
+	text-align : left;
+}
+#sketch ul li{
+	display : inline-block;
+	width  : 80px;
+	height : 80px;
+}

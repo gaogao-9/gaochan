@@ -1,0 +1,129 @@
+/*
+	汎用的な要素設定のみを導入する
+	・原則として汎用クラスのみを記述する
+	・頻繁に使用する要素に関しては例外的に設定してもよい
+	・#(ID)を含む要素の設定は禁止とする
+*/
+
+a:link,a:visited {
+	color:#2b2b2b;
+}
+a:hover,a:active {
+	color:#007199;
+}
+
+p{
+	margin-bottom : 2rem;
+}
+
+img{
+	max-width : 100%;
+}
+
+strong{
+	color : #ff0000;
+	font-weight : bold;
+}
+
+dt{
+	display : inline-block;
+	font-size : 2.5rem;
+	vertical-align : top;
+}
+dt:after{
+	content : " : ";
+}
+dd{
+	display : inline-block;
+	padding : 0;
+	text-align : left;
+}
+dd cite{
+	font-weight : bold;
+}
+
+.hidden{
+	display : none;
+}
+.block{
+	display:block;
+}
+
+.nobr{
+	white-space: nowrap;
+}
+
+.left{
+	text-align:left;
+	margin:0px auto;
+	margin-left:0px;
+}
+.right{
+	text-align:right;
+	margin:0px auto;
+	margin-right:0px;
+}
+.center{
+	text-align:center;
+	margin:0px auto;
+}
+.box{
+	display:-moz-box;
+	display:-webkit-box;
+	display:-o-box;
+	display:-ms-box;
+	display:box;
+}
+.flex{
+	display:-moz-flex;
+	display:-webkit-flex;
+	display:-o-flex;
+	display:-ms-flex;
+	display:flex;
+}
+.flex1{
+	-moz-flex:1;
+	-webkit-flex:1;
+	-o-flex:1;
+	-ms-flex:1;
+	flex:1;
+}
+.borderBox{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+table{
+	width : 100%;
+}
+table.hot,table.hot td,table.hot th,table.cool,table.cool td,table.cool th{
+	border : solid 1px #000000;
+}
+table.hot caption,table.cool caption{
+	border : solid 1px #000000;
+	border-bottom : none;
+	border-radius : 2rem 1rem 0 0;
+	color : #ffffff;
+	background : darkorange;
+}
+table.cool caption{
+	background : cornflowerblue;
+}
+table.hot tr,table.cool tr{
+	text-align : left;
+}
+table.hot th,table.cool th{
+	text-align : center;
+	background : #fff0b0;
+	padding : 0 0.25rem;
+}
+table.hot td,table.cool td{
+	padding : 0 0.25rem;
+}
+table.cool th{
+	color : navy;
+	background : powderblue;
+}
